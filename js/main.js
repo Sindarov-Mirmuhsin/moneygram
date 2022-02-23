@@ -20,10 +20,12 @@ elForm.addEventListener("submit", function(event) {
   if (elInputVal > 0) {
     elResult.textContent = (`${elResultVal}`);
   } else if (elInputVal < 0) {
-    elResult.textContent = ("Iltimos 0 dan katta qiymat kiriting");
+    elResult.textContent = ("Iltimos 0 dan katta qiymat kiriting !");
   } else if (elInputVal = "") {
-    elResult.textContent = ("Qiymat topilmadi Iltimos pul miqdorini kiriting");
+    elResult.textContent = ("Qiymat topilmadi Iltimos pul miqdorini kiriting !");
   } else if (elInputVal != Number) {
-    elResult.textContent = ("Iltimos pul miqdorini raqam ko'rinishida kiriting");
+    elResult.textContent = ("Iltimos pul miqdorini raqam ko'rinishida kiriting !");
+  }else{
+    elResult.textContent = ("Iltimos qaytadan urinib ko'ring");
   }
 })
